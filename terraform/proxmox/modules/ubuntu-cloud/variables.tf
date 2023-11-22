@@ -2,8 +2,8 @@ variable "ssh_key" {
   type = string
 }
 
-variable "nodes" {
-  type = list(string)
+variable "node" {
+  type = string
 }
 
 variable "ram" {

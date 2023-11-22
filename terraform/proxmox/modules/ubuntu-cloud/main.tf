@@ -2,7 +2,7 @@ resource "proxmox_vm_qemu" "ubuntu-cloud" {
   name        = var.name
   desc        = "Ubuntu 22.04 LTS (Jammy Jellyfish)"
   vmid        = var.id
-  target_node = var.nodes[0]
+  target_node = var.node
   scsihw      = "virtio-scsi-pci"
   qemu_os     = "l26"
   tags        = var.tags
